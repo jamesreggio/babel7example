@@ -19,11 +19,13 @@
     "metro-core": "^0.28.0",
     "patch-package": "^5.1.1",
     "postinstall-prepare": "^1.0.1",
-    "react-test-renderer": "16.2.0"
+    "react-test-renderer": "16.2.0",
+    "uglify-es": "^3.3.9"
   },
   "resolutions": {
     "metro": "^0.28.0",
-    "metro-core": "^0.28.0"
+    "metro-core": "^0.28.0",
+    "uglify-es": "^3.3.9"
   },
   "jest": {
     "preset": "react-native"
