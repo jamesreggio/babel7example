@@ -1,0 +1,3 @@
+rootProject.name = 'babel7example'
+
+include ':app'
