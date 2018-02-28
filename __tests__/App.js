@@ -6,6 +6,11 @@ import App from '../App';
 import renderer from 'react-test-renderer';
 
 it('renders correctly', () => {
+  // Use some of those sweet new JavaScript features in our tests.
+  const nothing = null;
+  const something = nothing ?? {foo: 42};
+  const nothingAgain = something?.foo?.bar;
+
   const tree = renderer.create(
     <App />
   );

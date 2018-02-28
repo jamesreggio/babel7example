@@ -22,13 +22,18 @@ const instructions = Platform.select({
 type Props = {};
 export default class App extends Component<Props> {
   render() {
+    // Use some of those sweet new JavaScript features.
+    const nothing = null;
+    const something = nothing ?? {foo: 42};
+    const nothingAgain = something?.foo?.bar;
+
     return (
       <View style={styles.container}>
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
         <Text style={styles.instructions}>
-          To get started, edit App.js
+          {null ?? 'To get started, edit App.js'}
         </Text>
         <Text style={styles.instructions}>
           {instructions}
